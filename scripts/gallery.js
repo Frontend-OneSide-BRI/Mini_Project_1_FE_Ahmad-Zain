@@ -35,25 +35,25 @@ document.addEventListener("DOMContentLoaded", function () {
       const displayPhotosByCategory = (category) => {
         gallery.innerHTML = "";
 
-        const categoryLinks = document.querySelectorAll(".nav-link");
+        const categoryLinks = document.querySelectorAll(".dropdown-item");
         categoryLinks.forEach((link) => {
           link.classList.remove("active");
           link.classList.remove("text-white");
           link.classList.remove("bg-gradient");
-          link.classList.remove("bg-dark");
+          link.classList.remove("bg-black");
           link.classList.add("text-secondary");
           link.classList.add("bg-none");
         });
 
         const activeLink = document.querySelector(
-          `.nav-link[data-category="${category}"]`
+          `.dropdown-item[data-category="${category}"]`
         );
         activeLink.classList.remove("text-secondary");
         activeLink.classList.remove("bg-none");
         activeLink.classList.add("active");
         activeLink.classList.add("text-white");
         activeLink.classList.add("bg-gradient");
-        activeLink.classList.add("bg-dark");
+        activeLink.classList.add("bg-black");
 
         if (category === "all") {
           data.data.forEach((photo) => {
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       };
 
-      const categoryLinks = document.querySelectorAll(".nav-link");
+      const categoryLinks = document.querySelectorAll(".dropdown-item");
       categoryLinks.forEach((link) => {
         link.addEventListener("click", function (event) {
           event.preventDefault();

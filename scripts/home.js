@@ -48,10 +48,11 @@ fetch("../scripts/data.json")
 
       const caption = document.createElement("div");
       caption.classList.add("caption");
-      const title = document.createElement("h5");
+      const title = document.createElement("h6");
       title.textContent = photo.title;
       const captionText = document.createElement("p");
       captionText.textContent = photo.caption;
+      captionText.classList.add("fs-7");
       caption.appendChild(title);
       caption.appendChild(captionText);
 
