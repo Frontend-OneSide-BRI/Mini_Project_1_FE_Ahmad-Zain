@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"
+          >tricky<span class="fw-normal">images</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-nav ms-auto gap-3">
+          <a class="text-decoration-none text-white" href="../pages/home.html"
+            >Home</a
+          >
+          <a
+            class="text-decoration-none text-secondary"
+            href="../pages/gallery.html"
+            >Gallery</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://img.freepik.com/free-photo/grilled-chicken-rice-spicy-chickpeas-avocado-cabbage-pepper-buddha-bowl_127032-1996.jpg?w=740&t=st=1685547193~exp=1685547793~hmac=de62634c7cf44043a1b021101b8f15690c36565d32b136439c20570934b1ea19"
+            class="d-block w-100"
+            alt=""
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Rice Bowl</h5>
+            <p>
+              Grilled chicken, rice, spicy chickpeas, avocado, cabbage, pepper
+              in buddha bowl.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://img.freepik.com/free-photo/space-background-with-stardust-shining-stars-realistic-colorful-cosmos-with-nebula-milky-way_1258-150930.jpg?w=740&t=st=1685547588~exp=1685548188~hmac=9ed400d6ae3e2d620456adcdf459d830c4ca19f4f8514742730f6fc3aae31b3d"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Stardust</h5>
+            <p>
+              Space background with stardust and shining stars realistic
+              colorful cosmos with nebula and milky way.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://img.freepik.com/free-photo/towering-skyscraper-with-bulbous-generative-ai_8829-2901.jpg?w=740&t=st=1685547848~exp=1685548448~hmac=293b4d4f0b939a93524453e42f629018b2546ae946e4a672c461c3548ff5187e"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Tower</h5>
+            <p>Towering skyscraper with a bulbous.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div id="photoGallery" class="container">
+      <h2 class="mt-5">All Photos</h2>
+      <div class="row row-cols-2 row-cols-md-3 g-4"></div>
+    </div>
+    <div class="container">
+      <div class="row" id="foodPhotos">
+        <h2 class="mt-5">Food Photos</h2>
+      </div>
+      <div class="row" id="galaxyPhotos">
+        <h2 class="mt-5">Galaxy Photos</h2>
+      </div>
+      <div class="row" id="fantasyPhotos">
+        <h2 class="mt-5">Fantasy Photos</h2>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/home.js"></script>
+  </body>
+</html>
